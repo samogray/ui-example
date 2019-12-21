@@ -9,7 +9,6 @@ export default {
   decorators: [withKnobs]
 };
 
-// Knobs for React props
 export const CheckBox = () => (
   <Decorator componentName="CheckBox">
     <Component disabled={boolean("Disabled", false)}>
