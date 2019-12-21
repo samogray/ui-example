@@ -40,6 +40,7 @@ $track-radius: $track-height !default;
    margin-bottom: 0;
    margin-left: 8px;
    margin-right: 8px;
+   
 
 
   -webkit-appearance: none;
@@ -50,7 +51,7 @@ $track-radius: $track-height !default;
   }
 
   &:focus {
-    outline: 0;
+    outline-offset: 3px;
 
     &::-webkit-slider-runnable-track {
       background-color: var(--sky-l2);

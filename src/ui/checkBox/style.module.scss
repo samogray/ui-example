@@ -18,6 +18,10 @@
     &:checked ~ .checkbox__decor::before {
       opacity: 1;
     }
+
+    &:focus ~ .checkbox__decor {
+      outline: -webkit-focus-ring-color auto 5px;
+    }
   }
 
   &__content {
