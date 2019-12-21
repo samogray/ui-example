@@ -1,24 +1,18 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {Tabs} from './ui'
+import './global-styles/theme.css'
+import './global-styles/reset.css'
+import css from './app.module.scss'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={css.container}>
+        <Tabs>
+          <Tabs.Tab title="tab 1">tab 1</Tabs.Tab>
+          <Tabs.Tab title="tab 2">
+            <div className="test">tab 2</div>
+          </Tabs.Tab>
+      </Tabs>
     </div>
   );
 }

@@ -1,0 +1,37 @@
+.tabs {
+
+  &__control {
+    display: flex;
+    overflow-x: auto;
+  }
+
+  &__btn {
+    position: relative;
+    padding: 4px 12px;
+    color: var(--ink-l1);
+    font-family: var(--font-family);
+    transition: color .2s ease-out;
+
+    &--active {
+      color: var(--ink);
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      width: 1px;
+      background-color: var(--ink-l2);
+    }
+
+    &:first-child {
+      padding-left: 0;
+    }
+
+    &:last-child::before {
+      display: none;
+    }
+  }
+}
