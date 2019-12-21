@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 import classNames from "classnames"
+import PropTypes from 'prop-types'
 import css from "./style.module.scss"
 
 const Tabs = ({ children }) => {
@@ -38,5 +39,9 @@ const Tab = ({ children }) => children
 
 Tabs.Tab = Tab
 
+Tab.propTypes = {
+  /** title for tab */
+  title: PropTypes.string,
+}
 
 export default Tabs
