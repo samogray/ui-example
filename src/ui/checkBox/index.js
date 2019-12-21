@@ -11,8 +11,11 @@ const CheckBox = ({children, onChange = () => {}, checked, disabled = false}) =>
 }
 
 CheckBox.propTypes = {
+  /** Function called when change input */
   onChange: PropTypes.func,
+  /** make initial checked input */
   checked: PropTypes.bool,
+  /** make disable input */
   disabled: PropTypes.bool,
 }
 
