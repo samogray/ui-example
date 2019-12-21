@@ -11,8 +11,6 @@ const mapLabel = {
   'bearish': 'danger',
 } 
 
-
-
 const Summary = ({header}) => {
 
   const rows = mockData.map(({
