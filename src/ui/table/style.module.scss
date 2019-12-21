@@ -10,7 +10,7 @@
 
   &__td,
   &__th {
-    text-align: left;
+    text-align: center;
     padding: 12px 8px;
     vertical-align: middle;
 
@@ -23,6 +23,24 @@
     &--header {
       padding: 4px 8px;
       color: var(--sky-l1);
+    }
+
+    &--left {
+      text-align: left;
+    }
+
+    &--right {
+      text-align: right;
+    }
+  }
+
+  &__td {
+    &--left {
+      text-align: left;
+    }
+
+    &--right {
+      text-align: right;
     }
   }
 

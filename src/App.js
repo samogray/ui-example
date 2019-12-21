@@ -14,7 +14,7 @@ const tabs = [
     component: () => <div>zalupa</div>
   },
 ];
-const header = ['Symbol', 'Price', 'Change', '% Change', 'Alerts', 'Volume', 'Abg.Vol', 'Close', 'Day Range', 'Open', 'Author Rating', 'Quant Rating', 'Sell Side Rating']
+const header = [{title: 'Symbol', align: 'left'}, {title: 'Price', align: 'right'}, 'Change', '% Change', 'Alerts', 'Volume', 'Abg.Vol', 'Close', 'Day Range', 'Open', 'Author Rating', 'Quant Rating', 'Sell Side Rating']
 
 const App = () => {
   return (

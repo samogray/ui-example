@@ -38,8 +38,5 @@ const Tab = ({ children }) => children
 
 Tabs.Tab = Tab
 
-Tabs.propTypes = {
- 
-}
 
 export default Tabs

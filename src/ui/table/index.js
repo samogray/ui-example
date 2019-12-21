@@ -1,8 +1,9 @@
 import React from "react";
 import classNames from 'classnames'
+import PropTypes from 'prop-types'
 import css from "./style.module.scss";
 
-const Table = ({headers, rows, rowHeaders} )=> {
+const Table = ({headers = [], rows = [], rowHeaders = true} )=> {
   return (
       <div className={classNames(css['table-container'], css.test)} role="group">
         <table className={css.table}>
@@ -13,9 +14,9 @@ const Table = ({headers, rows, rowHeaders} )=> {
                   role="columnheader"
                   scope="col"
                   key={index}
-                  className={classNames(css.table__th, css['table__th--header'])}
+                  className={classNames(css.table__th, css['table__th--header'], header.align && css[`table__th--${header.align}`])}
                 >
-                  {header}
+                  {header.title ? header.title : header}
                 </th>
               ))}
             </tr>
@@ -23,11 +24,11 @@ const Table = ({headers, rows, rowHeaders} )=> {
               <tr key={index} className={css.table__tr}>
                 {row.map((cell, index) =>
                   rowHeaders && index < 1 ? (
-                    <th scope="row" key={index} className={css.table__th}>
+                    <th scope="row" key={index} className={classNames(css.table__th, headers[index].align && css[`table__th--${headers[index].align}`])}>
                       {cell}
                     </th>
                   ) : (
-                    <td key={index} className={css.table__td}>
+                    <td key={index} className={classNames(css.table__td, headers[index].align && css[`table__td--${headers[index].align}`])}>
                       {cell}
                     </td>
                   )
@@ -41,7 +42,15 @@ const Table = ({headers, rows, rowHeaders} )=> {
 };
 
 Table.propTypes = {
- 
+  headers: PropTypes.arrayOf(PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.shape({
+      title: PropTypes.string,
+      align: PropTypes.oneOf(['left', 'right'])
+    })
+  ])),
+  rows: PropTypes.array,
+  rowHeaders: PropTypes.bool
 }
 
 export default Table;
