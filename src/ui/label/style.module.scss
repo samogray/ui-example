@@ -1,0 +1,23 @@
+.label {
+  display: inline-flex;
+  padding: 4px 12px;
+  align-items: center;
+  border-radius: var(--border-radius);
+  color: #fff;
+
+  &--base {
+    background-color: var(--ink-l2);
+  }
+  &--success {
+    background-color: var(--success);
+  }
+  &--success-secondary {
+    background-color: var(--success-l2);
+  }
+  &--warning {
+    background-color: var(--warning);
+  }
+  &--danger {
+    background-color: var(--danger);
+  }
+}

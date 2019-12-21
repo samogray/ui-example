@@ -11,4 +11,24 @@
     line-height: var(--caption-line-height);
     color: var(--sky);
   }
+
+  &--heading {
+    font-size: var(--heading-size);
+    font-weight: var(--heading-weight);
+    line-height: var(--heading-line-height);
+    margin: 20px 0;
+  }
+
+  &--subheading {
+    font-size: var(--subheading-size);
+    font-weight: var(--subheading-weight);
+    line-height: var(--subheading-line-height);
+    margin: 8px 0;
+  }
+
+  &--display {
+    font-size: var(--font-size-display);
+    font-weight: var(--font-weight-display);
+    line-height: var(--font-line-height-display);
+  }
 }

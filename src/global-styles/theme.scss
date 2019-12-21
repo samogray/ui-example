@@ -10,9 +10,9 @@
   --font-weight-display: 400;
   --font-line-height-display: 1.33;
 
-  --heading-size: 16px;
-  --heading-weight: 600;
-  --heading-line-height: 1.5;
+  --heading-size: 42px;
+  --heading-weight: 200;
+  --heading-line-height: 1.05;
 
   --subheading-size: 12px;
   --subheading-weight: 600;
@@ -45,4 +45,8 @@
   /* Offsets */
 
   --offset: 4px;
+
+  /* Border radius */
+
+  --border-radius: 4px;
 }

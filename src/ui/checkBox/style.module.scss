@@ -31,9 +31,9 @@
     align-items: center;
     width: 16px;
     height: 16px;
-    border-radius: 3px;
+    border-radius: var(--border-radius);
     overflow: hidden;
-    border: 1px solid var(--sky-l2);
+    border: 1px solid var(--ink-l1);
     border-color: .2s ease-out;
 
     &::before {

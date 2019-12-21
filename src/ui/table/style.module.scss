@@ -6,11 +6,12 @@
 
 .table {
   border-collapse: collapse;
+  width: 100%;
 
   &__td,
   &__th {
     text-align: left;
-    padding: 4px 8px;
+    padding: 12px 8px;
     vertical-align: middle;
 
     &:first-child {
@@ -20,6 +21,7 @@
 
   &__th {
     &--header {
+      padding: 4px 8px;
       color: var(--sky-l1);
     }
   }
