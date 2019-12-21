@@ -22,6 +22,17 @@
     &:focus ~ .checkbox__decor {
       outline: -webkit-focus-ring-color auto 5px;
     }
+
+    &[disabled] ~ .checkbox__decor {
+       pointer-events: none;
+       background-color: var(--sky-l2);
+       border-color: var(--sky-l1)
+    }
+
+    &[disabled] ~ .checkbox__content {
+       pointer-events: none;
+       color: var(--sky-l1);
+    }
   }
 
   &__content {
