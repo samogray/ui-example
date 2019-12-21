@@ -10,6 +10,7 @@ const Label = ({children, type = 'base'}) => {
 }
 
 Label.propTypes = {
+  /** type label */
   type: PropTypes.oneOf(['success', 'success-secondary', 'base', 'warning', 'danger']),
 }
 

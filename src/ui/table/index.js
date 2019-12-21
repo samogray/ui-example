@@ -42,7 +42,7 @@ const Table = ({headers = [], rows = [], rowHeaders = true} )=> {
 };
 
 Table.propTypes = {
-  /** array headers */
+  /** array of headers */
   headers: PropTypes.arrayOf(PropTypes.oneOfType([
     PropTypes.string,
     PropTypes.shape({
@@ -50,7 +50,7 @@ Table.propTypes = {
       align: PropTypes.oneOf(['left', 'right'])
     })
   ])),
-  /** array rows */
+  /** array of rows */
   rows: PropTypes.array,
   /** mark header of row */
   rowHeaders: PropTypes.bool
