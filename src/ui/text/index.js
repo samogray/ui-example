@@ -14,7 +14,7 @@ const Text = ({type='base', children, mixClassName = '', tagName = 'div'}) => {
 }
 
 Text.propTypes = {
-  type: PropTypes.oneOf(['caption', 'base', 'heading', 'subheading']),
+  type: PropTypes.oneOf(['caption', 'base', 'heading', 'subheading', 'display']),
   mixClassName: PropTypes.string,
   tagName: PropTypes.string,
 }

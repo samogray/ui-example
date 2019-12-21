@@ -27,8 +27,8 @@
   }
 
   &--display {
-    font-size: var(--font-size-display);
-    font-weight: var(--font-weight-display);
-    line-height: var(--font-line-height-display);
+    font-size: var(--display-size);
+    font-weight: var(--display-weight);
+    line-height: var(--display-line-height);
   }
 }
