@@ -31,7 +31,7 @@ export const Table = () => {
   <Decorator componentName="Table">
     <Component
       rows={rows}
-      headers={select('ALign', options, options.left, 'sizes')}
+      headers={select('ALign', options, options.left, 'align')}
       rowHeaders
     />
   </Decorator>

@@ -2,8 +2,10 @@
   font-family: var(--font-family);
   font-size: var(--font-base-size);
   line-height: var(--line-height-base);
-  color: var(--ink);
 
+  &--base {
+    color: var(--ink);
+  }
 
   &--caption {
     font-size: var(--caption-size);
