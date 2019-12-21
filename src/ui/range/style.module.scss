@@ -34,6 +34,11 @@ $track-radius: $track-height !default;
   display: flex;
   align-items: center;
 
+  &__label {
+    min-width: 4ch;
+    text-align: center;
+  }
+
  &__input {
    width: 100%;
    margin-top: 0;

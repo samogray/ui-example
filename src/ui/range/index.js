@@ -5,9 +5,9 @@ import css from './style.module.scss'
 
 const Range = ({value, minLabel = 1, maxLabel = 100, onChange = () => {}}) => {
   return <div className={css.range}>
-    {minLabel && <Text tagName="span" type="caption">{minLabel}</Text>}
+    {minLabel && <Text tagName="span" type="caption" mixClassName={css.range__label}>{minLabel}</Text>}
       <input value={value} type="range" onChange={onChange} className={css.range__input}/>
-    {maxLabel && <Text tagName="span" type="caption">{maxLabel}</Text>}
+    {maxLabel && <Text tagName="span" type="caption" mixClassName={css.range__label}>{maxLabel}</Text>}
   </div>
 }
 
