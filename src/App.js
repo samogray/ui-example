@@ -1,17 +1,25 @@
 import React from "react";
 import { Tabs, Text } from "./ui";
-import { Summary } from "./components";
+import { Summary, Holdings, QuantRating, Performance } from "./components";
 import "./global-styles/index.scss";
 import css from "./app.module.scss";
 
 const tabs = [
   {
     title: "Summary",
-    component: Summary
+    component: Summary,
   },
   {
     title: "Holdings",
-    component: () => <div>zalupa</div>
+    component: Holdings,
+  },
+  {
+    title: "Quant Rating",
+    component: QuantRating,
+  },
+  {
+    title: "Performance",
+    component: Performance,
   },
 ];
 const header = [{title: 'Symbol', align: 'left'}, {title: 'Price', align: 'right'}, 'Change', '% Change', 'Alerts', 'Volume', 'Abg.Vol', 'Close', 'Day Range', 'Open', 'Author Rating', 'Quant Rating', 'Sell Side Rating']

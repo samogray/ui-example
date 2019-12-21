@@ -13,7 +13,7 @@ const mapLabel = {
 
 
 
-const Summary = ({header}) => {
+const Holdings = ({header}) => {
 
   const rows = mockData.map(({
     symbol,
@@ -48,4 +48,4 @@ const Summary = ({header}) => {
   return <Table rows={rows} headers={header} rowHeaders />;
 };
 
-export default Summary;
+export default Holdings;
