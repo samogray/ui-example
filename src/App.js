@@ -1,24 +1,24 @@
-import React from "react"
-import { Tabs, Text } from "./ui"
-import { Summary, Holdings, QuantRating, Performance } from "./components"
-import "./global-styles/index.scss"
-import css from "./app.module.scss"
+import React from 'react'
+import { Tabs, Text } from './ui'
+import { Summary, Holdings, QuantRating, Performance } from './components'
+import './global-styles/index.scss'
+import css from './app.module.scss'
 
 const tabs = [
   {
-    title: "Summary",
+    title: 'Summary',
     component: Summary,
   },
   {
-    title: "Holdings",
+    title: 'Holdings',
     component: Holdings,
   },
   {
-    title: "Quant Rating",
+    title: 'Quant Rating',
     component: QuantRating,
   },
   {
-    title: "Performance",
+    title: 'Performance',
     component: Performance,
   },
 ]

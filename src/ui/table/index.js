@@ -1,15 +1,15 @@
-import React from "react"
-import classNames from "classnames"
-import PropTypes from "prop-types"
-import css from "./style.module.scss"
+import React from 'react'
+import classNames from 'classnames'
+import PropTypes from 'prop-types'
+import css from './style.module.scss'
 
 const Table = ({ headers = [], rows = [], rowHeaders = true }) => {
   return (
-    <div className={css["table-container"]} role="group" data-testid="table-ui">
+    <div className={css['table-container']} role="group" data-testid="table-ui">
       <table className={css.table}>
         <tbody>
           <tr
-            className={classNames(css.table__tr, css["table__tr--header"])}
+            className={classNames(css.table__tr, css['table__tr--header'])}
             data-testid="table-headers-ui"
           >
             {headers.map((header, index) => (
@@ -19,7 +19,7 @@ const Table = ({ headers = [], rows = [], rowHeaders = true }) => {
                 key={index}
                 className={classNames(
                   css.table__th,
-                  css["table__th--header"],
+                  css['table__th--header'],
                   header.align && css[`table__th--${header.align}`]
                 )}
               >
@@ -75,7 +75,7 @@ Table.propTypes = {
       PropTypes.string,
       PropTypes.shape({
         title: PropTypes.string,
-        align: PropTypes.oneOf(["left", "right"])
+        align: PropTypes.oneOf(['left', 'right'])
       })
     ])
   ),

@@ -1,7 +1,7 @@
-import React from "react"
+import React from 'react'
 import classNames from 'classnames'
 import {mockData} from './mock-data'
-import { Table, Text, CheckBox, Range, Label } from "../../ui"
+import { Table, Text, CheckBox, Range, Label } from '../../ui'
 
 const mapLabel = {
   'not covered': 'base',

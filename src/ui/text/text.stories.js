@@ -1,6 +1,6 @@
 
-import React from "react"
-import { withKnobs, select } from "@storybook/addon-knobs"
+import React from 'react'
+import { withKnobs, select } from '@storybook/addon-knobs'
 import { withInfo } from '@storybook/addon-info'
 import { jsxDecorator } from 'storybook-addon-jsx'
 import Component from './index'
@@ -8,7 +8,7 @@ import Decorator from '../utils/stories-decorator'
 
 
 export default {
-  title: "Text",
+  title: 'Text',
   decorators: [jsxDecorator, withKnobs, withInfo]
 }
 
@@ -32,7 +32,7 @@ const colors = {
 
 export const Tabs = () => {
   return (
-  <Decorator componentName="Text">
+  <Decorator componentName='Text'>
     <Component type={select('Type', options, options.heading, 'type')} mixClassName={select('Color', colors, colors.base, 'colors')}>
       {`Text ${select('Type', options, options.heading, 'type')}`}
     </Component>

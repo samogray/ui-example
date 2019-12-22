@@ -1,7 +1,7 @@
-import React, { useState } from "react"
-import classNames from "classnames"
+import React, { useState } from 'react'
+import classNames from 'classnames'
 import PropTypes from 'prop-types'
-import css from "./style.module.scss"
+import css from './style.module.scss'
 
 const Tabs = ({ children }) => {
   const [activeIndex, setActive] = useState(0)

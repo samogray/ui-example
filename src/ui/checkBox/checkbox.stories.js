@@ -1,6 +1,6 @@
 
-import React, {useState} from "react"
-import { withKnobs, text, boolean } from "@storybook/addon-knobs"
+import React, {useState} from 'react'
+import { withKnobs, text, boolean } from '@storybook/addon-knobs'
 import { withInfo } from '@storybook/addon-info'
 import { jsxDecorator } from 'storybook-addon-jsx'
 import Component from './index'

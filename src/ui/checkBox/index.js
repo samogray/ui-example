@@ -1,6 +1,6 @@
-import React from "react"
-import PropTypes from "prop-types"
-import css from "./style.module.scss"
+import React from 'react'
+import PropTypes from 'prop-types'
+import css from './style.module.scss'
 
 const CheckBox = ({
   children,

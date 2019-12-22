@@ -1,7 +1,7 @@
-import React from "react"
-import PropTypes from "prop-types"
-import Text from "../text"
-import css from "./style.module.scss"
+import React from 'react'
+import PropTypes from 'prop-types'
+import Text from '../text'
+import css from './style.module.scss'
 
 const Range = ({
   value,
