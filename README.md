@@ -10,7 +10,7 @@ Launches the test runner in the interactive watch mode.
 
 
 ## `Demo`
-Open [Demo page](https://samogray.github.io/ui-example/ui/)
+Open [Demo page](https://samogray.github.io/ui-example)
 
 ## `StoryBook`
 Open [StoryBook](https://samogray.github.io/ui-example/ui/)
