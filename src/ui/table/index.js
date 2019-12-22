@@ -5,7 +5,7 @@ import css from "./style.module.scss";
 
 const Table = ({headers = [], rows = [], rowHeaders = true} )=> {
   return (
-      <div className={classNames(css['table-container'], css.test)} role="group">
+      <div className={css['table-container']} role="group" data-testid="table-ui">
         <table className={css.table}>
           <tbody>
             <tr className={classNames(css.table__tr, css['table__tr--header'])}>

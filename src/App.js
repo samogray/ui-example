@@ -26,7 +26,7 @@ const header = [{title: 'Symbol', align: 'left'}, {title: 'Price', align: 'right
 
 const App = () => {
   return (
-    <div className={css.container}>
+    <div className={css.container} data-testid="application">
       <Text type="heading" tagName="h1" mixClassName="color-ink-l1">Me Tech Stocks</Text>
       <Tabs>
           {tabs.map(({ title, component: Component }) => (

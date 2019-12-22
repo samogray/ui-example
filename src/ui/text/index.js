@@ -8,6 +8,7 @@ const Text = ({type='base', children, mixClassName = '', tagName = 'div'}) => {
     tagName,
     {
       className: classNames(css.text, css[`text--${type}`], mixClassName),
+      ['data-testid']: 'text-ui',
     },
     children,
   )

@@ -28,7 +28,7 @@ const Tabs = ({ children }) => {
   }
 
   return (
-    <div className={css.tabs}>
+    <div className={css.tabs} data-testid="tabs-ui">
       <div className={css.tabs__controls}>{getTabs()}</div>
       <div className={css.tabs__content}>{getContent()}</div>
     </div>
