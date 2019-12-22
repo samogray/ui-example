@@ -1,7 +1,7 @@
-import React from "react";
-import classNames from "classnames";
-import PropTypes from "prop-types";
-import css from "./style.module.scss";
+import React from "react"
+import classNames from "classnames"
+import PropTypes from "prop-types"
+import css from "./style.module.scss"
 
 const Table = ({ headers = [], rows = [], rowHeaders = true }) => {
   return (
@@ -65,8 +65,8 @@ const Table = ({ headers = [], rows = [], rowHeaders = true }) => {
         </tbody>
       </table>
     </div>
-  );
-};
+  )
+}
 
 Table.propTypes = {
   /** array of headers */
@@ -83,6 +83,6 @@ Table.propTypes = {
   rows: PropTypes.array,
   /** mark header of row */
   rowHeaders: PropTypes.bool
-};
+}
 
-export default Table;
+export default Table

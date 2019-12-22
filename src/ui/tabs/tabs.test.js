@@ -1,6 +1,6 @@
 import React from 'react'
 import { render } from '@testing-library/react'
-import userEvent from "@testing-library/user-event";
+import userEvent from "@testing-library/user-event"
 import {
   getByTestId,
 } from '@testing-library/dom'
@@ -22,7 +22,7 @@ const mockTabs = [
 test('Render Tabs Component', () => {
   const { container } = render(<Tabs />)
   expect(getByTestId(container, 'tabs-ui')).toBeTruthy()
-});
+})
 
 
 test('If not children, button length equal 0', () => {
@@ -30,7 +30,7 @@ test('If not children, button length equal 0', () => {
   const tabs = getByTestId(container, 'tabs-ui')
   const tabControls = tabs.querySelectorAll('button')
   expect(tabControls.length === 0).toBeTruthy()
-});
+})
 
 
 test('Count tabs equal count children', () => {
@@ -40,7 +40,7 @@ const { container } = render(<Tabs>{mockTabs.map(
   const tabs = getByTestId(container, 'tabs-ui')
   const tabControls = tabs.querySelectorAll('button')
   expect(tabControls.length === mockTabs.length).toBeTruthy()
-});
+})
 
 
 test('Count must be not Empty', () => {
@@ -49,7 +49,7 @@ const { container } = render(<Tabs>{mockTabs.map(
   )
   const tabsContent = getByTestId(container, 'tabs-content-ui')
   expect(tabsContent).not.toBeEmpty()
-});
+})
 
 test('Add active class to button', () => {
 const { container } = render(<Tabs>{mockTabs.map(
@@ -57,6 +57,6 @@ const { container } = render(<Tabs>{mockTabs.map(
   )
   const tabs = getByTestId(container, 'tabs-ui')
   const button = tabs.querySelector('button')
-  userEvent.click(button);
+  userEvent.click(button)
   expect(button).toHaveClass('tabs__btn--active')
-});
+})

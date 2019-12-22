@@ -1,7 +1,7 @@
-import React from "react";
+import React from "react"
 import classNames from 'classnames'
 import {mockData} from './mock-data'
-import { Table, Text, CheckBox, Range, Label } from "../../ui";
+import { Table, Text, CheckBox, Range, Label } from "../../ui"
 
 const mapLabel = {
   'not covered': 'base',
@@ -45,7 +45,7 @@ const Holdings = ({header}) => {
 ]
     )
 
-  return <Table rows={rows} headers={header} rowHeaders />;
-};
+  return <Table rows={rows} headers={header} rowHeaders />
+}
 
-export default Holdings;
+export default Holdings

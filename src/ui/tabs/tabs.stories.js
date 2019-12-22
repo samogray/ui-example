@@ -1,16 +1,16 @@
 
-import React from "react";
-import { withKnobs } from "@storybook/addon-knobs";
-import { withInfo } from '@storybook/addon-info';
-import { jsxDecorator } from 'storybook-addon-jsx';
-import Component from './index';
+import React from "react"
+import { withKnobs } from "@storybook/addon-knobs"
+import { withInfo } from '@storybook/addon-info'
+import { jsxDecorator } from 'storybook-addon-jsx'
+import Component from './index'
 import Decorator from '../utils/stories-decorator'
 
 
 export default {
   title: "Tabs",
   decorators: [jsxDecorator, withKnobs, withInfo]
-};
+}
 
 export const Tabs = () => {
   return (
@@ -24,5 +24,5 @@ export const Tabs = () => {
       </Component.Tab>
     </Component>,
   </Decorator>
-)};
+)}
 

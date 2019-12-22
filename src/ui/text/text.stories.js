@@ -1,16 +1,16 @@
 
-import React from "react";
-import { withKnobs, select } from "@storybook/addon-knobs";
-import { withInfo } from '@storybook/addon-info';
-import { jsxDecorator } from 'storybook-addon-jsx';
-import Component from './index';
+import React from "react"
+import { withKnobs, select } from "@storybook/addon-knobs"
+import { withInfo } from '@storybook/addon-info'
+import { jsxDecorator } from 'storybook-addon-jsx'
+import Component from './index'
 import Decorator from '../utils/stories-decorator'
 
 
 export default {
   title: "Text",
   decorators: [jsxDecorator, withKnobs, withInfo]
-};
+}
 
 
 const options = {
@@ -37,5 +37,5 @@ export const Tabs = () => {
       {`Text ${select('Type', options, options.heading, 'type')}`}
     </Component>
   </Decorator>
-)};
+)}
 

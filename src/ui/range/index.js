@@ -1,7 +1,7 @@
-import React from "react";
-import PropTypes from "prop-types";
-import Text from "../text";
-import css from "./style.module.scss";
+import React from "react"
+import PropTypes from "prop-types"
+import Text from "../text"
+import css from "./style.module.scss"
 
 const Range = ({
   value,
@@ -29,14 +29,14 @@ const Range = ({
         </Text>
       )}
     </div>
-  );
-};
+  )
+}
 
 Range.propTypes = {
   minLabel: PropTypes.number,
   maxLabel: PropTypes.number,
   value: PropTypes.number,
   onChange: PropTypes.func
-};
+}
 
-export default Range;
+export default Range

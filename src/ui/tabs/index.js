@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 import css from "./style.module.scss"
 
 const Tabs = ({ children }) => {
-  const [activeIndex, setActive] = useState(0);
+  const [activeIndex, setActive] = useState(0)
 
   const getTabs = () => {
     if (React.Children.count(children) === 0) {
@@ -30,7 +30,7 @@ const Tabs = ({ children }) => {
     if (React.Children.count(children) === 0) {
       return
     }
-    return React.Children.toArray(children)[activeIndex].props.children;
+    return React.Children.toArray(children)[activeIndex].props.children
   }
 
   return (

@@ -1,15 +1,15 @@
 
-import React, {useState} from "react";
-import { withKnobs, text, boolean } from "@storybook/addon-knobs";
-import { withInfo } from '@storybook/addon-info';
-import { jsxDecorator } from 'storybook-addon-jsx';
-import Component from './index';
+import React, {useState} from "react"
+import { withKnobs, text, boolean } from "@storybook/addon-knobs"
+import { withInfo } from '@storybook/addon-info'
+import { jsxDecorator } from 'storybook-addon-jsx'
+import Component from './index'
 import Decorator from '../utils/stories-decorator'
 
 export default {
   title: "CheckBox",
   decorators: [jsxDecorator, withKnobs, withInfo]
-};
+}
 
 export const CheckBox = () => {
   const [check, toggleCheck] = useState(false)
@@ -20,5 +20,5 @@ export const CheckBox = () => {
       {text("Label", "CheckBox label")}
     </Component>
   </Decorator>
-)};
+)}
 

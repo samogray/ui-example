@@ -1,8 +1,8 @@
-import React from "react";
-import { Tabs, Text } from "./ui";
-import { Summary, Holdings, QuantRating, Performance } from "./components";
-import "./global-styles/index.scss";
-import css from "./app.module.scss";
+import React from "react"
+import { Tabs, Text } from "./ui"
+import { Summary, Holdings, QuantRating, Performance } from "./components"
+import "./global-styles/index.scss"
+import css from "./app.module.scss"
 
 const tabs = [
   {
@@ -21,7 +21,7 @@ const tabs = [
     title: "Performance",
     component: Performance,
   },
-];
+]
 const header = [{title: 'Symbol', align: 'left'}, {title: 'Price', align: 'right'}, 'Change', '% Change', 'Alerts', 'Volume', 'Abg.Vol', 'Close', 'Day Range', 'Open', 'Author Rating', 'Quant Rating', 'Sell Side Rating']
 
 const App = () => {
@@ -38,7 +38,7 @@ const App = () => {
           ))}
       </Tabs>
     </div>
-  );
-};
+  )
+}
 
-export default App;
+export default App
