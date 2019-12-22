@@ -9,5 +9,8 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 Launches the test runner in the interactive watch mode.
 
 
+## `Demo`
+Open [Demo page](https://samogray.github.io/ui-example/ui/)
+
 ## `StoryBook`
-Open [StoryBook](https://samogray.github.io/ui-example/docs/ui/)
+Open [StoryBook](https://samogray.github.io/ui-example/ui/)
