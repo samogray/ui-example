@@ -2,6 +2,7 @@
   "name": "ui-example",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://samogray.github.io/ui-example",
   "dependencies": {
     "@storybook/addon-knobs": "^5.2.8",
     "@testing-library/jest-dom": "^4.2.4",
@@ -9,6 +10,7 @@
     "@testing-library/user-event": "^7.2.1",
     "chai": "^4.2.0",
     "classnames": "^2.2.6",
+    "gh-pages": "^2.1.1",
     "node-sass": "^4.13.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
@@ -21,7 +23,9 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 9009 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b master -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
