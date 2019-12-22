@@ -8,7 +8,8 @@ const Text = ({type='base', children, mixClassName = '', tagName = 'div'}) => {
     tagName,
     {
       className: classNames(css.text, css[`text--${type}`], mixClassName),
-      dataTestid: 'text-ui',
+      // eslint-disable-next-line no-useless-computed-key
+      ['data-testid']: 'text-ui',
     },
     children,
   )
