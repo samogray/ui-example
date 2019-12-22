@@ -11,7 +11,7 @@ export default {
   title: "Table",
   decorators: [jsxDecorator, withKnobs, withInfo]
 };
-const headers = ['Band', 'Lead vocalist', 'Year', 'Song', 'left'];
+const headers = ['Band', 'Lead vocalist', 'Year', 'Song'];
 
 const rows = [
   ["Napalm Death", "Ivo Bobul", "1981", "let it tell you the rain"],

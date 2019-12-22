@@ -8,7 +8,7 @@ const Table = ({headers = [], rows = [], rowHeaders = true} )=> {
       <div className={css['table-container']} role="group" data-testid="table-ui">
         <table className={css.table}>
           <tbody>
-            <tr className={classNames(css.table__tr, css['table__tr--header'])}>
+            <tr className={classNames(css.table__tr, css['table__tr--header'])} data-testid="table-headers-ui">
               {headers.map((header, index) => (
                 <th
                   role="columnheader"
@@ -21,14 +21,28 @@ const Table = ({headers = [], rows = [], rowHeaders = true} )=> {
               ))}
             </tr>
             {rows.map((row, index) => (
-              <tr key={index} className={css.table__tr}>
+              <tr key={index} className={css.table__tr} data-testid="table-rows-ui">
                 {row.map((cell, index) =>
                   rowHeaders && index < 1 ? (
-                    <th scope="row" key={index} className={classNames(css.table__th, headers[index].align && css[`table__th--${headers[index].align}`])}>
+                    <th
+                      scope="row"
+                      key={index}
+                      className={classNames(
+                        css.table__th,
+                        headers[index].align && css[`table__th--${headers[index].align}`],
+                      )}
+                    >
                       {cell}
                     </th>
                   ) : (
-                    <td key={index} className={classNames(css.table__td, headers[index].align && css[`table__td--${headers[index].align}`])}>
+                    <td
+                      key={index}
+                      className={classNames(
+                        css.table__td,
+                        headers[index] && headers[index].align && css[`table__td--${headers[index].align}`]
+                      )
+                    }
+                    >
                       {cell}
                     </td>
                   )

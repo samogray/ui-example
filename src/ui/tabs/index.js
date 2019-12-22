@@ -7,6 +7,9 @@ const Tabs = ({ children }) => {
   const [activeIndex, setActive] = useState(0);
 
   const getTabs = () => {
+    if (React.Children.count(children) === 0) {
+      return
+    }
     return React.Children.map(children, (node, index) => {
       return (
         <button
@@ -24,13 +27,16 @@ const Tabs = ({ children }) => {
   }
 
   const getContent = () => {
+    if (React.Children.count(children) === 0) {
+      return
+    }
     return React.Children.toArray(children)[activeIndex].props.children;
   }
 
   return (
     <div className={css.tabs} data-testid="tabs-ui">
-      <div className={css.tabs__controls}>{getTabs()}</div>
-      <div className={css.tabs__content}>{getContent()}</div>
+      <div className={css.tabs__controls} data-testid="tabs-controls-ui">{getTabs()}</div>
+      <div className={css.tabs__content} data-testid="tabs-content-ui">{getContent()}</div>
     </div>
   )
 }
