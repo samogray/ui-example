@@ -4,7 +4,7 @@ import classNames from 'classnames'
 import css from './style.module.scss'
 
 const Label = ({children, type = 'base'}) => {
-  return <div className={classNames(css.label, css[`label--${type}`])}>
+  return <div className={classNames(css.label, css[`label--${type}`])} data-testid="label-ui">
     {children}
   </div>
 }
