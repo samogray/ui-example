@@ -1,24 +1,24 @@
 {
   "files": {
     "main.css": "/ui-example/main.css",
-    "main.js": "/ui-example/main.94fd86552750a85536c5.bundle.js",
+    "main.js": "/ui-example/main.10c5e950b98ac751d5d2.bundle.js",
     "main.css.map": "/ui-example/main.css.map",
-    "main.js.map": "/ui-example/main.94fd86552750a85536c5.bundle.js.map",
-    "runtime~main.js": "/ui-example/runtime~main.94fd86552750a85536c5.bundle.js",
-    "runtime~main.js.map": "/ui-example/runtime~main.94fd86552750a85536c5.bundle.js.map",
+    "main.js.map": "/ui-example/main.10c5e950b98ac751d5d2.bundle.js.map",
+    "runtime~main.js": "/ui-example/runtime~main.10c5e950b98ac751d5d2.bundle.js",
+    "runtime~main.js.map": "/ui-example/runtime~main.10c5e950b98ac751d5d2.bundle.js.map",
     "vendors~main.css": "/ui-example/vendors~main.css",
-    "vendors~main.js": "/ui-example/vendors~main.94fd86552750a85536c5.bundle.js",
+    "vendors~main.js": "/ui-example/vendors~main.10c5e950b98ac751d5d2.bundle.js",
     "vendors~main.css.map": "/ui-example/vendors~main.css.map",
-    "vendors~main.js.map": "/ui-example/vendors~main.94fd86552750a85536c5.bundle.js.map",
+    "vendors~main.js.map": "/ui-example/vendors~main.10c5e950b98ac751d5d2.bundle.js.map",
     "iframe.html": "/ui-example/iframe.html",
-    "precache-manifest.f0d9c1153d46291d09d85dbaa26e60d5.js": "/ui-example/precache-manifest.f0d9c1153d46291d09d85dbaa26e60d5.js",
+    "precache-manifest.93623bbb53e0c6e46317d791c6ddd2b5.js": "/ui-example/precache-manifest.93623bbb53e0c6e46317d791c6ddd2b5.js",
     "service-worker.js": "/ui-example/service-worker.js"
   },
   "entrypoints": [
-    "runtime~main.94fd86552750a85536c5.bundle.js",
+    "runtime~main.10c5e950b98ac751d5d2.bundle.js",
     "vendors~main.css",
-    "vendors~main.94fd86552750a85536c5.bundle.js",
+    "vendors~main.10c5e950b98ac751d5d2.bundle.js",
     "main.css",
-    "main.94fd86552750a85536c5.bundle.js"
+    "main.10c5e950b98ac751d5d2.bundle.js"
   ]
 }
