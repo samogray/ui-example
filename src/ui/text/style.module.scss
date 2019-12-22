@@ -1,3 +1,5 @@
+@import "../../global-styles/util.scss";
+
 .text {
   font-family: var(--font-family);
   font-size: var(--font-base-size);
@@ -18,14 +20,14 @@
     font-size: var(--heading-size);
     font-weight: var(--heading-weight);
     line-height: var(--heading-line-height);
-    margin: 20px 0;
+    margin: offset(5) 0;
   }
 
   &--subheading {
     font-size: var(--subheading-size);
     font-weight: var(--subheading-weight);
     line-height: var(--subheading-line-height);
-    margin: 8px 0;
+    margin: offset(2) 0;
   }
 
   &--display {

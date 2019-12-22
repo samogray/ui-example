@@ -1,5 +1,6 @@
-.tabs {
+@import "../../global-styles/util.scss";
 
+.tabs {
   &__controls {
     display: flex;
     overflow-x: auto;
@@ -8,7 +9,7 @@
 
   &__btn {
     position: relative;
-    padding: 8px 12px;
+    padding: offset(2) offset(3);
     color: var(--ink-l1);
     font-family: var(--font-family);
     font-size: 16px;
@@ -21,9 +22,9 @@
     &::after {
       content: "";
       position: absolute;
-      top: 8px;
+      top: offset(2);
       right: 0;
-      bottom: 8px;
+      bottom: offset(2);
       width: 1px;
       background-color: var(--ink-l2);
     }

@@ -1,4 +1,4 @@
-
+@import "../../global-styles/util.scss";
 $thumb-radius: 50% !default;
 $thumb-height: 16px !default;
 $thumb-width: 16px !default;
@@ -44,8 +44,8 @@ $track-radius: $track-height !default;
    width: 100%;
    margin-top: 0;
    margin-bottom: 0;
-   margin-left: 8px;
-   margin-right: 8px;
+   margin-left: offset(2);
+   margin-right: offset(2);
    
 
 

@@ -1,3 +1,4 @@
+@import "../../global-styles/util.scss";
 
 .table-container {
   max-width: 100%;
@@ -11,7 +12,7 @@
   &__td,
   &__th {
     text-align: center;
-    padding: 12px 8px;
+    padding: offset(3) offset(2);
     vertical-align: middle;
 
     &:first-child {
@@ -21,7 +22,7 @@
 
   &__th {
     &--header {
-      padding: 4px 8px;
+      padding: offset(1) offset(2);
       color: var(--sky-l1);
     }
 

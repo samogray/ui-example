@@ -1,0 +1,3 @@
+@function offset($multiple) {
+  @return calc(var(--offset) * #{$multiple});
+}

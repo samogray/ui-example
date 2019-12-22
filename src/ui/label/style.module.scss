@@ -1,6 +1,8 @@
+@import "../../global-styles/util.scss";
+
 .label {
   display: inline-flex;
-  padding: 4px 12px;
+  padding: offset(1) offset(3);
   align-items: center;
   border-radius: var(--border-radius);
   color: #fff;
